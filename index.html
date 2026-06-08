@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>開発研究生｜のじ</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #0d0d0d;
+      color: #ffffff;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin-bottom: 4px;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .bio {
+      font-size: 13px;
+      color: #9ca3af;
+      text-align: center;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      border-radius: 12px;
+      background-color: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .link-btn:hover {
+      background-color: #222222;
+      border-color: #3b82f6;
+      transform: translateY(-1px);
+    }
+
+    .link-btn.disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    .icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .icon-x       { background-color: #000000; border: 1px solid #333; }
+    .icon-note    { background-color: #41c9b4; }
+    .icon-line    { background-color: #06c755; }
+    .icon-port    { background-color: #3b82f6; }
+
+    .link-text { flex: 1; }
+    .link-label { font-size: 15px; font-weight: 600; }
+    .link-sub   { font-size: 11px; color: #6b7280; margin-top: 1px; }
+
+    .badge {
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: 99px;
+      background-color: #1e3a5f;
+      color: #60a5fa;
+      font-weight: 600;
+    }
+
+    .footer {
+      margin-top: 8px;
+      font-size: 11px;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="avatar">👨‍💻</div>
+
+    <div class="name">開発研究生｜のじ</div>
+
+    <div class="bio">
+      AIで個人開発してる大学生<br>
+      作る過程・詰まり・売上まで全部オープンに発信🔓<br>
+      HP/LP・業務効率化ツールの相談はDMへ📩
+    </div>
+
+    <div class="links">
+
+      <a class="link-btn" href="https://x.com/kaihatsu_lab" target="_blank">
+        <div class="icon icon-x">𝕏</div>
+        <div class="link-text">
+          <div class="link-label">X（旧Twitter）</div>
+          <div class="link-sub">@kaihatsu_lab｜開発リアルタイム発信</div>
+        </div>
+      </a>
+
+      <a class="link-btn" href="https://note.com/" target="_blank">
+        <div class="icon icon-note">📝</div>
+        <div class="link-text">
+          <div class="link-label">note</div>
+          <div class="link-sub">開発の学び・ノウハウを発信</div>
+        </div>
+      </a>
+
+      <a class="link-btn" href="https://www.instagram.com/kaihatsu_lab" target="_blank">
+        <div class="icon" style="background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);">📸</div>
+        <div class="link-text">
+          <div class="link-label">Instagram</div>
+          <div class="link-sub">@kaihatsu_lab｜AI活用術を図解で発信</div>
+        </div>
+      </a>
+
+      <div class="link-btn disabled">
+        <div class="icon icon-line">💬</div>
+        <div class="link-text">
+          <div class="link-label">LINE公式アカウント</div>
+          <div class="link-sub">仕事の相談・お知らせ</div>
+        </div>
+        <span class="badge">準備中</span>
+      </div>
+
+      <div class="link-btn disabled">
+        <div class="icon icon-port">🗂️</div>
+        <div class="link-text">
+          <div class="link-label">Portfolio</div>
+          <div class="link-sub">開発実績・HP/LP制作事例</div>
+        </div>
+        <span class="badge">準備中</span>
+      </div>
+
+    </div>
+
+    <div class="footer">© 2026 のじ｜開発研究生</div>
+
+  </div>
+</body>
+</html>
